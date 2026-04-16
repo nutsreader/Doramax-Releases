@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doramax | Premium BL Dramas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFC000; /* Iqiyi Green/Yellow */
+            --bg: #050505;
+            --card: #151515;
+            --text: #ffffff;
+            --gray: #9E9E9E;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+        /* Smooth Background Animation */
+        .bg-glow {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% -20%, #ffc00033, transparent 50%);
+            z-index: -1;
+        }
+
+        /* Container */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header { padding: 40px 0; text-align: center; }
+        .logo { font-size: 3rem; font-weight: 800; color: var(--primary); letter-spacing: -2px; margin-bottom: 10px; }
+        .tagline { color: var(--gray); font-size: 1.1rem; }
+
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; padding: 60px 0; text-align: center; }
+        .hero-img { width: 100%; max-width: 600px; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); margin-bottom: 40px; border: 1px solid #ffffff11; }
+
+        /* Features */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin: 60px 0; }
+        .feature-card { background: var(--card); padding: 32px; border-radius: 20px; border: 1px solid #ffffff08; transition: transform 0.3s ease; }
+        .feature-card:hover { transform: translateY(-10.dp); border-color: var(--primary); }
+        .feature-card h3 { color: var(--primary); margin-bottom: 12.dp; font-size: 1.3rem; }
+        .feature-card p { color: var(--gray); font-size: 0.95rem; }
+
+        /* Description Section */
+        .content-section { background: linear-gradient(180deg, var(--card), transparent); padding: 60px 40px; border-radius: 30px; margin-bottom: 60px; }
+        .content-section h2 { font-size: 2rem; margin-bottom: 20px; }
+        .content-section p { color: var(--gray); margin-bottom: 20px; }
+
+        /* Download Button */
+        .btn-download {
+            display: inline-block; background-color: var(--primary); color: #000;
+            padding: 18px 48px; border-radius: 50px; font-weight: 800; text-decoration: none;
+            font-size: 1.2rem; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(255, 192, 0, 0.3);
+        }
+        .btn-download:hover { transform: scale(1.05); box-shadow: 0 15px 40px rgba(255, 192, 0, 0.5); }
+
+        /* Footer */
+        footer { padding: 60px 0; text-align: center; border-top: 1px solid #ffffff11; }
+        .version { font-size: 0.8rem; color: var(--gray); margin-top: 10px; }
+
+        @media (max-width: 768px) {
+            .logo { font-size: 2.2rem; }
+            .content-section { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">Dⓞramax</div>
+            <p class="tagline">The Ultimate Gateway to BL Stories</p>
+        </header>
+
+        <section class="hero">
+            <img src="https://image.tmdb.org/t/p/original/Ar5UTGtirw6UMHRkZZtMJM6HCM0.jpg" class="hero-img" alt="App Preview">
+            <a href="https://github.com/nutsreader/Doramax-Releases/releases/latest" class="btn-download">DOWNLOAD APK</a>
+            <p class="version">Current Version: 1.0.9 | Android 6.0+</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Infinite BL</h3>
+                <p>Curated collection of the most popular Boys' Love and Girls' Love series from Thailand, Korea, and Japan.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smooth Player</h3>
+                <p>Advanced video player with subtitle support, 10s skip, and automatic episode history tracking.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Stay Updated</h3>
+                <p>Real-time weekly schedule so you never miss a premiere or a finale of your favorite ongoing series.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Made for the Community</h2>
+            <p>Doramax isn't just an app; it's a sanctuary for fans of heart-fluttering romances. We focus on providing a sleek, ad-optimized experience that puts the story first.</p>
+            <p>From the latest Thai GMMTV sensations to the hidden gems of Japanese Yaoi, everything is organized into a modern, easy-to-navigate grid system.</p>
+            <p><strong>Lightweight & Fast:</strong> Optimized to run smoothly on any Android device without draining your battery.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Doramax Client. Not affiliated with any production companies.</p>
+            <p style="font-size: 0.7rem; color: #555; margin-top: 10px;">For educational purposes only.</p>
+        </footer>
+    </div>
+</body>
+</html>
